@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="пэкло">
+    <meta name="description" content="TEST">
+    <meta name="keywords" content="тест, проверка, html">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&Inter:wght@700&family=Montserrat:wght@200&family=Montserrat:wght@300&family=Montserrat:wght@400&family=Montserrat:wght@500&family=Montserrat:wght@600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>ObHouse</title>
+  </head>
+  <body>
+    <div id="#space" class="space"></div>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="navbar-brand">LOGO</a>
+        <div class="navbar-wrap">
+          <ul class="navbar-menu">
+            <li><a href="#about-us">О нас</a></li>
+            <li><a href="#products">Продукция</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="callback-container"><svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.7925 9.94125C7.0525 12.4175 9.0825 14.4387 11.5588 15.7075L13.4837 13.7825C13.72 13.5463 14.07 13.4675 14.3763 13.5725C15.3562 13.8962 16.415 14.0712 17.5 14.0712C17.9812 14.0712 18.375 14.465 18.375 14.9462V18C18.375 18.4812 17.9812 18.875 17.5 18.875C9.28375 18.875 2.625 12.2163 2.625 4C2.625 3.51875 3.01875 3.125 3.5 3.125H6.5625C7.04375 3.125 7.4375 3.51875 7.4375 4C7.4375 5.09375 7.6125 6.14375 7.93625 7.12375C8.0325 7.43 7.9625 7.77125 7.7175 8.01625L5.7925 9.94125Z" fill="white"/></svg><a href="#popup" class="callback">Связаться сейчас</a>
+        </div> 
+      </div>
+    </nav>
+    <div class="body-container">
+      <div class="body-container-leftside">
+        <h1>Лучшие решения для облицовки вашего дома!</h1>
+        <h2>10 лет на рынке!</h2>
+        <a href="#products"><button>Посмотреть каталог</button></a>
+      </div>
+      <div class="body-container-rightside">
+        <div class="body-container-rightside-inside">
+          <h1>Оставьте вашу заявку</h1>
+          <h2>Заполните форму и мы перезвоним!</h2>
+          <form class="BCRI_input">
+            <input id="inputName" type="text" name="firstname" placeholder="Ваше имя">
+            <input id="inputTel" type="tel" name="telnum" maxlength="16" placeholder="Ваш номер телефона">
+          </form>
+          <div class="error_js_upper" id="error" style="color: red"></div>
+          <a id="popupAppl" class="popup_appl_a" href="#popup_appl"><button class="BCRI_button" onclick="checkForm(this)">Отправить<svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.4973 1.05145C17.5258 0.776773 17.3261 0.531069 17.0514 0.502653L12.5753 0.0396072C12.3007 0.0111928 12.055 0.210827 12.0265 0.485504C11.9981 0.760181 12.1978 1.00589 12.4724 1.0343L16.4512 1.4459L16.0396 5.42466C16.0112 5.69934 16.2108 5.94504 16.4855 5.97346C16.7602 6.00187 17.0059 5.80224 17.0343 5.52756L17.4973 1.05145ZM1.3153 14.3881L17.3153 1.38806L16.6847 0.611943L0.684704 13.6119L1.3153 14.3881Z" fill="white"/></svg></button></a>
+          <button id="BCRI_button" id="BCRI_button" class="BCRI_button" onclick="checkForm(this)">Отправить<svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.4973 1.05145C17.5258 0.776773 17.3261 0.531069 17.0514 0.502653L12.5753 0.0396072C12.3007 0.0111928 12.055 0.210827 12.0265 0.485504C11.9981 0.760181 12.1978 1.00589 12.4724 1.0343L16.4512 1.4459L16.0396 5.42466C16.0112 5.69934 16.2108 5.94504 16.4855 5.97346C16.7602 6.00187 17.0059 5.80224 17.0343 5.52756L17.4973 1.05145ZM1.3153 14.3881L17.3153 1.38806L16.6847 0.611943L0.684704 13.6119L1.3153 14.3881Z" fill="white"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <svg class ="svg-delta" width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 24L39.9186 0H0.0814152L20 24Z" fill="#FF9A23"/></svg>
+    <div class="AbtComp" id="about-us">
+      <div class="AbtComp-leftside">
+        <h1>О НАС</h1>
+        <h2>10 лет на рынке</h2>
+        <p class="AbtComp-text">
+           Если Вы хотите купить облицовочный кирпич в Актобе, тогда Вы обратились точно по адресу. У нас есть кирпич различного цвета и размера. Мы на рынке облицовочного кирпича более 10 лет! Мы - прямые поставщики Украинского завода "ЕВРОТОН", "Белая Церковь" и также поставщики ведущих Российских кирпичных заводов таких как "ТМ Ликолор", "НЗКМ кирпичный завод", "Копыловская керамика", "Брянский кирпичный завод", "КЗ Красная Гвардия".Наша команда - это молодые современные лица, которые помогут подобрать оптимальный дизайн, выполнят полный подсчет кирпича от и до.
+        </p>
+        <p class="AbtComp-text-second">
+          Подберем кирпич для Вашего дома в соответствии ЦЕНА=КАЧЕСТВО!!
+        </p>
+      </div>
+      <div class="AbtComp-rightside">
+        <h1>Широкий ассортимент, сотни довольных клиентов!</h1>
+        <img src="img/image2.png"/>
+        <svg width="56" height="66" viewBox="0 0 56 66" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M56 33L0.5 0.957062L0.5 65.0429L56 33Z" fill="#FAFAFA"/></svg>
+      </div>
+    </div>
+    <div class="products" id="products">
+      <h1 class="products-hero-text">ПРОДУКЦИЯ</h1>
+      <div class="products-categories">
+        <a>ТК Ликолор</a>
+        <a>Тайга</a>
+        <a>Копылово</a>
+        <a>5 элемент</a>
+      </div>
+      <div class="products-cards">
+        <div class="products-cards-top">
+          <div class="products-card">
+            <img src="img/block1.png" alt="zxc"/>
+            <h1>Black Premium (Одинарный, 1-НФ)</h1>
+            <h2>Размер: 250х120х65</h2>
+            <h3>Количество в упаковке: 480 шт</h3>
+            <button>Узнать больше<svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4824 2.13156C22.555 1.86515 22.398 1.59028 22.1316 1.51762L17.7901 0.333589C17.5237 0.260932 17.2488 0.418 17.1762 0.684413C17.1035 0.950826 17.2606 1.2257 17.527 1.29835L21.3861 2.35082L20.3336 6.20988C20.2609 6.47629 20.418 6.75116 20.6844 6.82382C20.9508 6.89648 21.2257 6.73941 21.2984 6.473L22.4824 2.13156ZM1.24807 14.4341L22.2481 2.43412L21.7519 1.56588L0.751931 13.5659L1.24807 14.4341Z" fill="#FF9A23"/></svg></button>
+          </div>
+          <div class="products-card">
+            <img src="img/block2.png" alt="zxc"/>
+            <h1>Black Premium (Одинарный, 1-НФ)</h1>
+            <h2>Размер: 250х120х65</h2>
+            <h3>Количество в упаковке: 480 шт</h3>
+            <button>Узнать больше<svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4824 2.13156C22.555 1.86515 22.398 1.59028 22.1316 1.51762L17.7901 0.333589C17.5237 0.260932 17.2488 0.418 17.1762 0.684413C17.1035 0.950826 17.2606 1.2257 17.527 1.29835L21.3861 2.35082L20.3336 6.20988C20.2609 6.47629 20.418 6.75116 20.6844 6.82382C20.9508 6.89648 21.2257 6.73941 21.2984 6.473L22.4824 2.13156ZM1.24807 14.4341L22.2481 2.43412L21.7519 1.56588L0.751931 13.5659L1.24807 14.4341Z" fill="#FF9A23"/></svg></button>
+          </div>
+          <div class="products-card">
+            <img src="img/block3.png" alt="zxc"/>
+            <h1>Black Premium (Одинарный, 1-НФ)</h1>
+            <h2>Размер: 250х120х65</h2>
+            <h3>Количество в упаковке: 480 шт</h3>
+            <button>Узнать больше<svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4824 2.13156C22.555 1.86515 22.398 1.59028 22.1316 1.51762L17.7901 0.333589C17.5237 0.260932 17.2488 0.418 17.1762 0.684413C17.1035 0.950826 17.2606 1.2257 17.527 1.29835L21.3861 2.35082L20.3336 6.20988C20.2609 6.47629 20.418 6.75116 20.6844 6.82382C20.9508 6.89648 21.2257 6.73941 21.2984 6.473L22.4824 2.13156ZM1.24807 14.4341L22.2481 2.43412L21.7519 1.56588L0.751931 13.5659L1.24807 14.4341Z" fill="#FF9A23"/></svg></button>
+          </div>
+          <div class="products-card">
+            <img src="img/block4.png" alt="zxc"/>
+            <h1>Black Premium (Одинарный, 1-НФ)</h1>
+            <h2>Размер: 250х120х65</h2>
+            <h3>Количество в упаковке: 480 шт</h3>
+            <button>Узнать больше<svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4824 2.13156C22.555 1.86515 22.398 1.59028 22.1316 1.51762L17.7901 0.333589C17.5237 0.260932 17.2488 0.418 17.1762 0.684413C17.1035 0.950826 17.2606 1.2257 17.527 1.29835L21.3861 2.35082L20.3336 6.20988C20.2609 6.47629 20.418 6.75116 20.6844 6.82382C20.9508 6.89648 21.2257 6.73941 21.2984 6.473L22.4824 2.13156ZM1.24807 14.4341L22.2481 2.43412L21.7519 1.56588L0.751931 13.5659L1.24807 14.4341Z" fill="#FF9A23"/></svg></button>
+          </div>
+        </div>
+        <div class="products-cards-bottom">
+          <div class="products-card">
+            <img src="img/block1.png" alt="zxc"/>
+            <h1>Black Premium (Одинарный, 1-НФ)</h1>
+            <h2>Размер: 250х120х65</h2>
+            <h3>Количество в упаковке: 480 шт</h3>
+            <button>Узнать больше<svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4824 2.13156C22.555 1.86515 22.398 1.59028 22.1316 1.51762L17.7901 0.333589C17.5237 0.260932 17.2488 0.418 17.1762 0.684413C17.1035 0.950826 17.2606 1.2257 17.527 1.29835L21.3861 2.35082L20.3336 6.20988C20.2609 6.47629 20.418 6.75116 20.6844 6.82382C20.9508 6.89648 21.2257 6.73941 21.2984 6.473L22.4824 2.13156ZM1.24807 14.4341L22.2481 2.43412L21.7519 1.56588L0.751931 13.5659L1.24807 14.4341Z" fill="#FF9A23"/></svg></button>
+          </div>
+          <div class="products-card">
+            <img src="img/block2.png" alt="zxc"/>
+            <h1>Black Premium (Одинарный, 1-НФ)</h1>
+            <h2>Размер: 250х120х65</h2>
+            <h3>Количество в упаковке: 480 шт</h3>
+            <button>Узнать больше<svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4824 2.13156C22.555 1.86515 22.398 1.59028 22.1316 1.51762L17.7901 0.333589C17.5237 0.260932 17.2488 0.418 17.1762 0.684413C17.1035 0.950826 17.2606 1.2257 17.527 1.29835L21.3861 2.35082L20.3336 6.20988C20.2609 6.47629 20.418 6.75116 20.6844 6.82382C20.9508 6.89648 21.2257 6.73941 21.2984 6.473L22.4824 2.13156ZM1.24807 14.4341L22.2481 2.43412L21.7519 1.56588L0.751931 13.5659L1.24807 14.4341Z" fill="#FF9A23"/></svg></button>
+          </div>
+          <div class="products-card">
+            <img src="img/block3.png" alt="zxc"/>
+            <h1>Black Premium (Одинарный, 1-НФ)</h1>
+            <h2>Размер: 250х120х65</h2>
+            <h3>Количество в упаковке: 480 шт</h3>
+            <button>Узнать больше<svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4824 2.13156C22.555 1.86515 22.398 1.59028 22.1316 1.51762L17.7901 0.333589C17.5237 0.260932 17.2488 0.418 17.1762 0.684413C17.1035 0.950826 17.2606 1.2257 17.527 1.29835L21.3861 2.35082L20.3336 6.20988C20.2609 6.47629 20.418 6.75116 20.6844 6.82382C20.9508 6.89648 21.2257 6.73941 21.2984 6.473L22.4824 2.13156ZM1.24807 14.4341L22.2481 2.43412L21.7519 1.56588L0.751931 13.5659L1.24807 14.4341Z" fill="#FF9A23"/></svg></button>
+          </div>
+          <div class="products-card">
+            <img src="img/block4.png" alt="zxc"/>
+            <h1>Black Premium (Одинарный, 1-НФ)</h1>
+            <h2>Размер: 250х120х65</h2>
+            <h3>Количество в упаковке: 480 шт</h3>
+            <button>Узнать больше<svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4824 2.13156C22.555 1.86515 22.398 1.59028 22.1316 1.51762L17.7901 0.333589C17.5237 0.260932 17.2488 0.418 17.1762 0.684413C17.1035 0.950826 17.2606 1.2257 17.527 1.29835L21.3861 2.35082L20.3336 6.20988C20.2609 6.47629 20.418 6.75116 20.6844 6.82382C20.9508 6.89648 21.2257 6.73941 21.2984 6.473L22.4824 2.13156ZM1.24807 14.4341L22.2481 2.43412L21.7519 1.56588L0.751931 13.5659L1.24807 14.4341Z" fill="#FF9A23"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <button class="products-pricelist-button">Скачать прайс-лист</button>
+    </div>
+    <div class="ourworks" id="ourworks">
+      <h1 class="ourworks-hero-text">НАШИ РАБОТЫ</h1>
+      <div class="ourworks-container swiper mySwiper">
+        <div class="ourworks-wrapper swiper-wrapper">
+          <div class="ourworks-block swiper-slide"><img class="car-img" src="img/car.png" alt="zxc"/></div>
+          <div class="ourworks-block swiper-slide"><img class="car-img" src="img/car.png" alt="zxc"/></div>
+          <div class="ourworks-block swiper-slide"><img class="car-img" src="img/car.png" alt="zxc"/></div>
+        </div>
+      </div>
+      <div class="svgs">
+        <div class="img-navbar">
+          <button class="button-left-arrow"><svg class ="left-arrow" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292881 8.70711C-0.097641 8.31658 -0.097641 7.68342 0.292881 7.29289L6.65684 0.928932C7.04737 0.538408 7.68053 0.538408 8.07106 0.928932C8.46158 1.31946 8.46158 1.95262 8.07106 2.34315L2.4142 8L8.07106 13.6569C8.46158 14.0474 8.46158 14.6805 8.07106 15.0711C7.68053 15.4616 7.04737 15.4616 6.65684 15.0711L0.292881 8.70711ZM50.0102 9H0.999989V7H50.0102V9Z" fill="#FF9A23"/></svg></button>
+          <div class="swiper-pagination"></div>
+          <!-- <svg class="left-circle" width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3.01025" cy="3" r="3" fill="#FF9A23"/></svg>
+          <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3.01025" cy="3" r="3" fill="#FF9A23" fill-opacity="0.22"/></svg>
+          <svg class="right-circle" width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3.01025" cy="3" r="3" fill="#FF9A23" fill-opacity="0.22"/></svg> -->
+          <button class="button-right-arrow"><svg class ="right-arrow" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M49.7276 8.70711C50.1181 8.31658 50.1181 7.68342 49.7276 7.29289L43.3636 0.928932C42.9731 0.538408 42.3399 0.538408 41.9494 0.928932C41.5589 1.31946 41.5589 1.95262 41.9494 2.34315L47.6062 8L41.9494 13.6569C41.5589 14.0474 41.5589 14.6805 41.9494 15.0711C42.3399 15.4616 42.9731 15.4616 43.3636 15.0711L49.7276 8.70711ZM0.0102539 9H49.0205V7H0.0102539L0.0102539 9Z" fill="#FF9A23"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="review">
+      <div class="review-leftside">
+        <h1>Оставьте вашу заявку</h1>
+        <h2>Заполните форму и мы перезвоним вам для консультации</h2>
+        <div class="review-leftside-input">
+          <input id="inputNameBott" type="text" name="firstname" placeholder="Ваше имя">
+          <input id="inputTelBott" type="tel" name="telnum" maxlength="16" placeholder="Ваш номер телефона">
+            <div class="input-big-message">
+          <input id="inputBigMessageBott" type="message" name="bigmessage" placeholder="Дополнительный комментарий">
+            </div>
+          <a class="popup_appl_a" href="#popup_appl"><button class="review-send-button" onclick="checkFormBott(this)">Отправить<svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17.4973 1.05145C17.5258 0.776773 17.3261 0.531069 17.0514 0.502653L12.5753 0.0396072C12.3007 0.0111928 12.055 0.210827 12.0265 0.485504C11.9981 0.760181 12.1978 1.00589 12.4724 1.0343L16.4512 1.4459L16.0396 5.42466C16.0112 5.69934 16.2108 5.94504 16.4855 5.97346C16.7602 6.00187 17.0059 5.80224 17.0343 5.52756L17.4973 1.05145ZM1.3153 14.3881L17.3153 1.38806L16.6847 0.611943L0.684704 13.6119L1.3153 14.3881Z" fill="black"/></svg></button></a>
+        </div>
+      </div>
+      <svg width="2" height="364" viewBox="0 0 2 364" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 363.5V0" stroke="black" stroke-opacity="0.5"/></svg>
+      <div class="review-rightside">
+        <img src="img/blockwall.png" alt="zxc"/>
+        <h1>Сделайте заказ до 2 февраля и получите скидку -10%</h1>
+        <button class="review-pricelist-button">Скачать прайс-лист</button>
+      </div>
+    </div>
+    <div class="footer" id="contacts">
+      <div class="footer-first-part">
+        <h1>Навигация</h1>
+        <nav class="footer-navbar">
+          <a href="#about-us">О нас</a>
+          <a href="#products">Продукция</a>
+          <a href="#ourworks">Наши работы</a>
+        </nav>
+      </div>
+      <div class="footer-second-part">
+        <h1>Контакты</h1>
+        <p><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.965 8.0925C6.045 10.215 7.785 11.9475 9.9075 13.035L11.5575 11.385C11.76 11.1825 12.06 11.115 12.3225 11.205C13.1625 11.4825 14.07 11.6325 15 11.6325C15.4125 11.6325 15.75 11.97 15.75 12.3825V15C15.75 15.4125 15.4125 15.75 15 15.75C7.9575 15.75 2.25 10.0425 2.25 3C2.25 2.5875 2.5875 2.25 3 2.25H5.625C6.0375 2.25 6.375 2.5875 6.375 3C6.375 3.9375 6.525 4.8375 6.8025 5.6775C6.885 5.94 6.825 6.2325 6.615 6.4425L4.965 8.0925Z" fill="black"/></svg>+7 705 392 61 45</p>
+        <p><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.965 8.0925C6.045 10.215 7.785 11.9475 9.9075 13.035L11.5575 11.385C11.76 11.1825 12.06 11.115 12.3225 11.205C13.1625 11.4825 14.07 11.6325 15 11.6325C15.4125 11.6325 15.75 11.97 15.75 12.3825V15C15.75 15.4125 15.4125 15.75 15 15.75C7.9575 15.75 2.25 10.0425 2.25 3C2.25 2.5875 2.5875 2.25 3 2.25H5.625C6.0375 2.25 6.375 2.5875 6.375 3C6.375 3.9375 6.525 4.8375 6.8025 5.6775C6.885 5.94 6.825 6.2325 6.615 6.4425L4.965 8.0925Z" fill="black"/></svg>+7 707 777 75 85</p>
+        <h2>Адрес</h2>
+        <p class="footer-adress"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 8.625C8.50272 8.625 8.02581 8.42746 7.67417 8.07582C7.32254 7.72419 7.125 7.24728 7.125 6.75C7.125 6.25272 7.32254 5.7758 7.67417 5.42417C8.02581 5.07254 8.50272 4.875 9 4.875C9.49728 4.875 9.97419 5.07254 10.3258 5.42417C10.6775 5.7758 10.875 6.25272 10.875 6.75C10.875 6.99623 10.8265 7.24005 10.7323 7.46753C10.638 7.69502 10.4999 7.90171 10.3258 8.07582C10.1517 8.24993 9.94502 8.38805 9.71753 8.48227C9.49005 8.5765 9.24623 8.625 9 8.625ZM9 1.5C7.60761 1.5 6.27226 2.05312 5.28769 3.03769C4.30312 4.02226 3.75 5.35761 3.75 6.75C3.75 10.6875 9 16.5 9 16.5C9 16.5 14.25 10.6875 14.25 6.75C14.25 5.35761 13.6969 4.02226 12.7123 3.03769C11.7277 2.05312 10.3924 1.5 9 1.5Z" fill="black"/></svg>г. Актобе, 41 разъезд, товарный двор 602А, офис 3</p>
+      </div>
+      <div class="footer-geo">
+        <img src="img/geo.png" alt="zxc"/>
+      </div>
+    </div>
+    <div id="popup" class="popup">
+      <a href="#space" class="popup_area"></a>
+      <div class="popup_body">
+        <div class="popup_content">
+          <a href="#space" class="popup_close">X</a>
+          <div class="popup_title">Наши контакты:</div>
+          <div class="popup_text">
+          <h1>+7-705-392-61-45</h1>
+          <h2>+7-707-777-75-85</h2>
+          <p>Адрес:</p>
+          <h3>г. Актобе, 41 разъезд,</h3>
+          <h4>товарный двор 602А, офис 3</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup_appl" class="popup_appl">
+      <a href="#space" class="popup_area_appl"></a>
+      <div class="popup_body_appl">
+        <div class="popup_content_appl">
+          <a href="#space" class="popup_close_appl">X</a>
+          <div class="popup_title_appl">Ваша заявка подана</div>
+          <div class="popup_text_appl">
+          <h1>Мы обязательно с вами свяжемся, спасибо!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <noscript>включу жаву сука</noscript>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="swiper.js"></script>
+</html>
+<script src="main.js"></script>
