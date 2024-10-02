@@ -173,7 +173,7 @@ function checkForm(el) {
 
 
 	if(name == "" || tel == "") {
-		fail = "Заполните все поля";
+		fail = "Пошел нахуй пидорас ебучий";
 	}
 
 	else if(name.length <= 1 || name.length > 50) 
