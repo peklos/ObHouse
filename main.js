@@ -46,7 +46,7 @@
 // var zxc = 100;
 // do {
 // 	console.log(zxc);
-// 	zxc -=10;
+// 	zxc -= 10;
 // } while(zxc > 10);
 
 // var jopa = [123, "slovo", true, -2, [1, 2, [1, 2, 3, [123, "PIZDA"]]]];
@@ -67,7 +67,7 @@
 // if(data) {
 // 	alert("ну не спиздел харош");
 // }
-// if(data==false) {
+// if(data == false) {
 // 	alert("пиздишь");
 // }
 
@@ -168,9 +168,8 @@ function checkForm(el) {
 	}
 	var name = document.getElementById('inputName').value;
 	var tel = document.getElementById('inputTel').value;
+
 	var fail = "";
-
-
 
 	if(name == "" || tel == "") {
 		fail = "Заполните все поля";
@@ -200,14 +199,49 @@ function checkForm(el) {
 
 }
 
+document.getElementById('popupAppl-bottom').style = 'display: none';
+document.getElementById('errorBott').style = 'display: none;';
+
 function checkFormBott(el) {
-	console.log("---------------");
-	console.log("bottom");
-	var name = document.getElementById('inputNameBott').value;
-	console.log("NAME: " + name);
-	var tel = document.getElementById('inputTelBott').value;
-	console.log("TEL: " + tel);
-	var bm = document.getElementById('inputBigMessageBott').value;
-	console.log("BM: " + bm);
-	console.log("---------------");
+	var nameBott = document.getElementById('inputNameBott').value;
+	var telBott = document.getElementById('inputTelBott').value;
+	var bmBott = document.getElementById('inputBigMessageBott').value;
+	function showResultBott() {
+		console.log("---------------");
+		console.log("bottom");
+		console.log("NAME: " + nameBott);
+		console.log("TEL: " + telBott);
+		console.log("BM: " + bmBott);
+		console.log("---------------");
+	}
+
+	var failBott = '';
+
+	if(nameBott == "" || telBott == "") {
+		failBott = "Заполните необходимые поля";
+	}
+
+	else if(nameBott.length <= 1 || nameBott.length > 50) {
+		failBott = "Введите корректное имя";
+	}
+
+	else if(telBott.length <= 5 || nameBott.length > 14) {
+		failBott = "Введите корректный номер телефона";
+	}
+
+	if(failBott != "") {
+		document.getElementById('errorBott').style = 'opacity: 1;';
+		document.getElementById('errorBott').innerHTML = failBott;
+	}
+
+	if(failBott == '') {
+		showResultBott();
+		document.getElementById('RWB-button').style = 'display: none';
+		document.getElementById('popupAppl-bottom').style = 'display: block';
+		document.getElementById('errorBott').style = 'display: none';
+		document.getElementById('errorBott').innerHTML = "";
+		document.getElementById('popupAppl-bottom').click();
+		document.getElementById('popupAppl-bottom').style = 'display: none';
+		document.getElementById('RWB-button').style = 'display: block';
+	}
 }
